@@ -6,7 +6,14 @@ enable_testing()
 
 add_executable(OpenGLGame main.cpp)
 add_subdirectory(include)
-add_subdirectory(dependencies/glew-2.2.0/include)
+
+target_include_directories(OpenGLGame
+    PRIVATE dependencies/glew-2.2.0/include
+)
+
+target_link_libraries(OpenGLGame
+    PUBLIC ${PROJECT_SOURCE_DIR}/dependencies/glew-2.2.0/lib/libGLEW.so.2.2.0
+)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
