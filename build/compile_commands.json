@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lewisg/Documents/Computer Science/C++/OpenGLGame/build",
+  "command": "/usr/bin/g++ -I\"/home/lewisg/Documents/Computer Science/C++/OpenGLGame/include\" -I\"/home/lewisg/Documents/Computer Science/C++/OpenGLGame/dependencies/glew-2.2.0/include\" -g -o CMakeFiles/OpenGLGame.dir/main.cpp.o -c \"/home/lewisg/Documents/Computer Science/C++/OpenGLGame/main.cpp\"",
+  "file": "/home/lewisg/Documents/Computer Science/C++/OpenGLGame/main.cpp"
+}
+]

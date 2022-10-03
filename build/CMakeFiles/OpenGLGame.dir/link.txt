@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/OpenGLGame.dir/main.cpp.o -o OpenGLGame 
