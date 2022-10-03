@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/OpenGLGame.dir/main.cpp.o -o OpenGLGame  -Wl,-rpath,"/home/lewisg/Documents/Computer Science/C++/OpenGLGame/dependencies/glew-2.2.0/lib" "/home/lewisg/Documents/Computer Science/C++/OpenGLGame/dependencies/glew-2.2.0/lib/libGLEW.so.2.2.0" 

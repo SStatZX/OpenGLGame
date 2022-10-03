@@ -1,3 +1,2 @@
 #!/bin/sh
-cmake -S . -B build
-echo "Configured Successfully!"
+cmake -DGLFW_BUILD_DOCS=OFF -S . -B build
