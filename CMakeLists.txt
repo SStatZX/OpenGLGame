@@ -6,7 +6,7 @@ enable_testing()
 
 add_executable(OpenGLGame main.cpp)
 add_subdirectory(include)
-add_subdirectory(dependencies/glfw) # This is actually brilliant (cmake actually good//???)
+add_subdirectory(dependencies/glfw)
 
 target_include_directories(OpenGLGame
     PRIVATE dependencies/glew-2.2.0/include
