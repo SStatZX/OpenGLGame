@@ -2,9 +2,6 @@
 	path = dependencies/glfw
 	url = https://github.com/glfw/glfw.git
 	branch = 3.3-stable
-[submodule "glew"]
-	path = glew
-	url = https://github.com/nigels-com/glew
 [submodule "dependencies/glew"]
 	path = dependencies/glew
 	url = https://github.com/nigels-com/glew
