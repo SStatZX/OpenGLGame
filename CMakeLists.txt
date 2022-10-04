@@ -2,20 +2,24 @@ cmake_minimum_required(VERSION 3.0.0)
 project(OpenGLGameProject VERSION 0.1.0)
 
 include(CTest)
+include(FindGLEW)
 enable_testing()
 
 add_executable(OpenGLGame main.cpp)
 add_subdirectory(include)
 add_subdirectory(dependencies/glfw)
-add_subdirectory(dependencies/glew-2.2.0/build/cmake) #GLEW_USE_STATIC_LIBS=ON
+#add_subdirectory(dependencies/glew/build/cmake) #GLEW_USE_STATIC_LIBS=ON
+Find_GLEW(GLEW_USE_STATIC_LIBS=ON)
 
 target_include_directories(OpenGLGame
-    PUBLIC dependencies/glew-2.2.0/ # where is include dir?
+    #PUBLIC dependencies/glew/ # where is include dir?
+    PUBLIC ${GLEW_INCLUDE_DIRS}
     PUBLIC dependencies/glfw/include
 )
 
 target_link_directories(OpenGLGame
-    PUBLIC dependencies/glew-2.2.0/lib/libGLEW.so.2.2.0 #smth like dependencies/glew-2.2.0/lib/libGLEW.so.2.2.0
+    #PUBLIC dependencies/glew/lib/libGLEW.so.2.2.0 #smth like dependencies/glew-2.2.0/lib/libGLEW.so.2.2.0
+    PUBLIC ${GLEW_STATIC_LIBRARIES}
     PUBLIC dependencies/glfw/src
 )
 
