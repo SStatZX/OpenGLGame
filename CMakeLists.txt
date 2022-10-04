@@ -2,14 +2,18 @@ cmake_minimum_required(VERSION 3.0.0)
 project(OpenGLGameProject VERSION 0.1.0)
 
 include(CTest)
-include(FindGLEW)
+include(SelectLibraryConfigurations)
 enable_testing()
+
+set(GLEW_USE_STATIC_LIBS=ON)
+set(GLFW_BUILD_DOCS=OFF)
 
 add_executable(OpenGLGame main.cpp)
 add_subdirectory(include)
 add_subdirectory(dependencies/glfw)
 #add_subdirectory(dependencies/glew/build/cmake) #GLEW_USE_STATIC_LIBS=ON
-Find_GLEW(GLEW_USE_STATIC_LIBS=ON)
+
+find_package(GLEW REQUIRED)
 
 target_include_directories(OpenGLGame
     #PUBLIC dependencies/glew/ # where is include dir?
