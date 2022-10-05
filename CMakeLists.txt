@@ -25,7 +25,7 @@ target_include_directories(OpenGLGame
 #     PUBLIC dependencies/glfw/src
 # )
 
-target_link_libraries(OpenGLGame glfw glut libglew_static) # libglew_static is workaround for now...
+target_link_libraries(OpenGLGame glfw glut GL GLU libglew_static) # libglew_static is workaround for now...
 
 target_compile_definitions(OpenGLGame PRIVATE
 #    -DGLEW_USE_STATIC_LIBS=ON
