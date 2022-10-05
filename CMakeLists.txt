@@ -3,10 +3,8 @@ project(OpenGLGameProject VERSION 0.1.0)
 
 include(CTest)
 include(SelectLibraryConfigurations)
+include(FindGLEW)
 enable_testing()
-
-set(GLEW_USE_STATIC_LIBS=ON)
-set(GLFW_BUILD_DOCS=OFF)
 
 add_executable(OpenGLGame main.cpp)
 add_subdirectory(include)
@@ -28,6 +26,11 @@ target_link_directories(OpenGLGame
 )
 
 target_link_libraries(OpenGLGame glfw glut GL GLU GLEW) # Add GLEW etc
+
+target_compile_definitions(OpenGLGame PRIVATE
+    -DGLEW_USE_STATIC_LIBS=ON
+    -DGLFW_BUILD_DOCS=OFF
+    )
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
