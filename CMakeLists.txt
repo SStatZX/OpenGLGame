@@ -10,8 +10,8 @@ add_executable(OpenGLGame main.cpp)
 add_subdirectory(include)
 add_subdirectory(dependencies/glfw)
 add_subdirectory(dependencies/glew-cmake) 
-set(glew-cmake_BUILD_SHARED OFF) # This seems to not work, shared library still builds. Workaround is to link static library instead
-set(ONLY_LIBS ON)
+set(glew-cmake_BUILD_SHARED "OFF") # This seems to not work, shared library still builds. Workaround is to link static library instead
+set(ONLY_LIBS "ON")
 
 #find_package(GLEW REQUIRED)
 
