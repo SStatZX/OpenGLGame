@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lewisg/Documents/Computer Science/C++/OpenGLGame/build",
+  "command": "/usr/bin/clang++ -DGLFW_BUILD_DOCS=OFF -Dglew_cmake_BUILD_SHARED=OFF -I\"/home/lewisg/Documents/Computer Science/C++/OpenGLGame/include\" -g -o CMakeFiles/OpenGLGame.dir/main.cpp.o -c \"/home/lewisg/Documents/Computer Science/C++/OpenGLGame/main.cpp\"",
+  "file": "/home/lewisg/Documents/Computer Science/C++/OpenGLGame/main.cpp"
+}
+]
